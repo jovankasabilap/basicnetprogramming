@@ -5,7 +5,6 @@ fs.writeFileSync('catatan.txt', 'Nama Saya Jovanka Sabila Pertiwi')
 const catatan = require('./catatan.js')
 const pesan1 = catatan()
 console.log(pesan1)
-
 const validator = require('validator');
 const ambilCatatan = require('./catatan.js');
 const pesan2 = ambilCatatan(); 
@@ -19,15 +18,4 @@ console.log(chalk.yellow('print warna kuning sukses'));
 console.log(chalk.bgYellow.black('print dengan latar belakang kuning dan teks hitam'));
 console.log(chalk.green.bold('print warna hijau dengan teks tebal'));
 console.log(chalk.cyan.underline('print warna cyan dengan garis bawah'));
-
-const ambilCatatan = require('./catatan.js')
-const command = process.argv[5]
-console.log(process.argv)
-if (command === 'tambah') {
-console.log('Tambah Catatan')
-} else if (command === 'hapus') {
-console.log('Hapus Catatan')
-}
-
-
 
